@@ -7,20 +7,13 @@ body{
 }
 /* margins are similar through all break points.  Setting them up for mobile first */
 main{
- margin-left: 2rem;
- margin-right: 2rem;
+    margin: 2rem;
+    margin-bottom: -2rem;
 }
 /* logo size paramters fixed here since they will be the same throughout */
 header img{ 
     max-width: 99.94px;
     height: 81.05px;
-}
-/* creating image parameters for mobile view image */
-.background{
-    width: 75%;
-    height: auto;
-    margin: auto;
-    padding: 1rem;
 }
 /* sizing for large blocks of text that show up above image */
 .main-text h1{
@@ -29,22 +22,26 @@ header img{
 .main-text p{
     font-size: 24px;
 }
+/* creating image parameters for mobile view image */
+.background{
+    background-image: url(../images/bg-image/scooter.svg);
+    background-repeat:no-repeat ;
+    background-position: center;
+    padding: 7rem;
+}
+
 /* application form parameters to align with the landing page image */
 div.contact{
-    margin: auto;    
     background-color:#FFFFFF;
     border: 0;
     border-radius: 26px;
-    height:475px;
-    width:80%;
     padding: 1rem;
-    text-align: center;
     box-shadow: 5px 10px 15px #33313166;
 }
 .contact h2{
     font-size: 40px;
-    margin: 0;
     text-align: left;
+    margin:0;
 }
 .contact p{
     font-size: 14px;
@@ -56,10 +53,11 @@ input[type=text]{
     border-radius: 11px;
     margin-bottom: 20px;
     padding: 12px;
-    width: 80%;
+    width: 90%;
 }
-input[type=checkbox]{
-    margin-bottom: 20px;
+div input{
+    margin-bottom: 10px;
+    border-radius: 4px;;
 }
 a{
     color: #FF8480;
@@ -76,8 +74,10 @@ a{
 /* footer settings that inclue text and other contact information */
 footer{
     background-color: #FFFD8C;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
 }
 /* allows developer to display contact hours and city side by side */
 .box1{
@@ -111,16 +111,13 @@ footer{
 
 /* tablet view css styling */
 @media(min-width: 375px){
-/* changing the margin settings for a larger device */
-main{
-    margin-right: 4rem;
-    margin-left: 4rem;
-}
+
 /* changing the size of the image to better fit a tablet view */
 .background{
-    width: 60%;
-    height: auto;
-    margin: auto;
+    top:-65px;
+    position: relative;
+padding:9rem;
+
 }
 /* small changes made to go from mobile to tablet view - for easier viewing */
 .main-text{
@@ -129,13 +126,8 @@ main{
 .main-text h1{
     text-align: left;
 }
-.contact h2{
-    margin-left: 2rem;
-}
-.contact p{
-    margin-left: 2rem;
-}
-/* allows me to align hours,sity and calculate along one line for tablet users */
+
+/* allows me to align hours,city and calculate along one line for tablet users */
 .footertext{
     display: flex;
 }
@@ -170,12 +162,17 @@ main{
 .background{
     width: 100%;
     height: auto;
+    margin: -10rem;
+
 }
+.contact{	
+    z-index: 9;
+}	
+
 /* allows me to align all footer items along one axis */
 .flex{
     display: flex;
-    align-items: flex-start;
-}
+    }
 #hours{
    height: 20px;
 }
@@ -185,6 +182,6 @@ main{
 /* brings icons to the far right side of the browser */
 .icons{
     margin-left:auto;
-    align-items: center;
+
 }
 }
