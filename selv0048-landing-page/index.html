@@ -9,23 +9,20 @@
 </head>
 <body>
     <main>
-<!-- breaking down the whole website into multiple blocks -->
-<!-- block 1 header -->
 <!-- this is where the logo is going to be placed, to take up the whole header section -putting the logo here because it will be same through any break point-->
         <header>
             <img src="images/logo/logo.png" alt="dash-logo">
         </header>
-<!-- block 2-deals with the first block of text area - this block deals with the large text area for the landing page-->
+<!--deals with the first block of text area - this block deals with the large text area for the landing page-->
         <div class="grid">
             <div class="main-text">
                 <h1>Want to be your own boss?</h1>
+
                 <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
             </div>
-<!-- block 3 - deals with the background image for the landing page-->
-            <div class="background">
-                <img src="images/bg-image/scooter.svg" alt="woman-on-scooter">
-            </div>
-<!-- block 4  - deals with the contact form block of the landing page - seperate from the rest of the page.-->
+<!-- div for thebackground image for the landing page-->
+            <div class="background"></div>
+<!--   deals with the contact form block of the landing page - seperate from the rest of the page.-->
             <div class="contact">
                 <h2>Apply Now</h2>
                 <p>Enter your info below.</p>
@@ -43,11 +40,12 @@
                     <div>
                         <input type="text" name="number" id="number" placeholder="Phone Number">
                     </div>
+                    <div>
+                        <input type="checkbox" name="terms" value="terms"> I agree to dash terms
+                    </div>
                 </div>
             </form>
-                <div>
-                    <input type="checkbox" name="terms" value="terms"> I agree to dash terms
-                </div>
+
                 <div>
                     <input type="submit" value="DRIVE WITH US">
                 </div>
@@ -55,8 +53,7 @@
                 <p>Already applied? <a>Check your application status here</a></p>
             </div> 
         </div>  
-    </main>
-    <!--block 5 - footer has been seperated into it's own block - since it's at the bottom included everything that's at the end of the page in the footer -->
+    <!-- footer has been seperated into it's own block - since it's at the bottom included everything that's at the end of the page in the footer -->
         <footer>
             <!-- footer text -->
             <div>
@@ -83,5 +80,6 @@
                 </div>
             </form>
         </footer>
+    </main>
 </body>
 </html>
