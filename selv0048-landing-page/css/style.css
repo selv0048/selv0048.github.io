@@ -116,7 +116,7 @@ footer{
 .background{
     top:-65px;
     position: relative;
-padding:9rem;
+    padding:9rem;
 
 }
 /* small changes made to go from mobile to tablet view - for easier viewing */
@@ -160,7 +160,7 @@ padding:9rem;
     grid-gap: 20px;
 }
 .background{
-    width: 100%;
+    max-width: 100%;
     height: auto;
     margin: -10rem;
 
