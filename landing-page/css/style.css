@@ -90,8 +90,6 @@ div.application p{
 /* footer settings that inclue text and other contact information */
 footer{
     background-color: #FFFD8C;
-    margin-left: -2rem;
-    margin-right: -2rem;
     padding:1rem 2rem 1rem 2rem;
 }
 .footer-text h4{
@@ -239,6 +237,7 @@ div.application p{
     display: flex;
 }
 .icons img{
+    margin-left: auto;
     justify-content: end;
 }
 }
