@@ -5,183 +5,238 @@ body{
     background-color:#f7f7ff;
     font-family: 'Montserrat',Arial, Helvetica, sans-serif;
 }
-/* margins are similar through all break points.  Setting them up for mobile first */
-main{
-    margin: 2rem;
-    margin-bottom: -2rem;
-}
-/* logo size paramters fixed here since they will be the same throughout */
+/* mobile view styles*/
+
+/* margins for mobile view */
+
+/* logo size paramters for mobile view */
 header img{ 
-    max-width: 99.94px;
+    width: 99.94px;
     height: 81.05px;
+    margin-left: 2rem;
 }
-/* sizing for large blocks of text that show up above image */
+article.content{
+    margin: 2rem;
+}
+/* sizing for large banner text for mobile view */
 .main-text h1{
     font-size: 60px;
+    margin-bottom: 0;
 }
 .main-text p{
     font-size: 24px;
+    margin-top: 0;
 }
 /* creating image parameters for mobile view image */
-.background{
-    background-image: url(../images/bg-image/scooter.svg);
+div.back-image{
+    background-image: url(../images/bg-image/scooter.svg); 
+    padding:7rem;
     background-repeat:no-repeat ;
     background-position: center;
-    padding: 7rem;
 }
 
-/* application form parameters to align with the landing page image */
+/* apply form parameters to contact form for all views */
 div.contact{
     background-color:#FFFFFF;
     border: 0;
     border-radius: 26px;
     padding: 1rem;
     box-shadow: 5px 10px 15px #33313166;
+    margin-bottom: 3rem;
 }
-.contact h2{
+div.contact h2{
     font-size: 40px;
     text-align: left;
     margin:0;
 }
-.contact p{
-    font-size: 14px;
+div.contact p{
+    font-size: 16px;
     text-align: left;
 }
-input[type=text]{
+.contact input[type=text]{
     background-color:#F4F4F5;
     border: 0;
     border-radius: 11px;
-    margin-bottom: 20px;
-    padding: 12px;
+    margin-bottom: 1rem;
+    height: 55px;
+    padding-left: 10px;
     width: 90%;
 }
-div input{
-    margin-bottom: 10px;
-    border-radius: 4px;;
+.contact input[type=checkbox]{
+    margin-bottom: 1.5rem;
 }
-a{
-    color: #FF8480;
+label{
+    font-size: 16px;
 }
-.contact input[type=submit]{
+/* style parameters for apply form button - mobile view */
+div.contact input[type=submit]{
     background-color:#57EEAB;
     border-radius: 11px;
     border: none;
-    font-size: 1.25rem;
+    font-size: 24px;
     font-weight: bold;
-    height: 50px;
+    height: 55px;
     width: 100%;
+    /* width: 250px; */
+}
+/* adding colour to make sure link stands out */
+div.application p{
+    font-size: 14px;
+}
+.application a{
+    color: #FF8480;
+    text-decoration:none;
 }
 /* footer settings that inclue text and other contact information */
 footer{
     background-color: #FFFD8C;
-    padding: 2rem;
-    margin-top: 2rem;
     margin-left: -2rem;
     margin-right: -2rem;
+    padding:1rem 2rem 1rem 2rem;
+}
+.footer-text h4{
+    font-size: 18px;
+    margin-right: 20%;
+    margin-bottom: 0;
+}
+.footer-text p{
+    font-size: 16px;
+    margin-right: 20%;
+}
+.hours{
+    margin-right: 2rem;
+}
+
+.footer-input input[type=text]{
+    background-color:#F7F7FF;
+    border: 0;
+    border-radius: 11px;
+    padding: 12px;
 }
 /* allows developer to display contact hours and city side by side */
-.box1{
-    display: flex;
+.footer-input{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
 }
-#hours{
-    flex: 1;
-    margin-right: 10px;
+
+.calculate{
+    grid-column: span 2;
 }
-#city{
-    flex: 3;
-}
-.box2 input[type="submit"]{
+/* this allows me to control dimensions and style of the calculate button */
+.calculate input[type="submit"]{
     background-color:#FF8480;
     border-radius: 11px;
-    border: none;
-    font-size: 1rem;
+    font-size: 24px;
     font-weight: bold;
-    height: 50px;
+    height: 40px;
     width: 100%;
     border: none;
     color: white;
-
+    margin-bottom: 1rem;
 }
-.icons img{
+/* using flex to align the icons along the bottom of footer */
+.icons{
+    display: flex;
+    justify-content: space-between;
     margin:5px;
-    text-align: center;
     padding: 1rem;
 }
-/* ^^ above is mobile first css styling */
-
 /* tablet view css styling */
-@media(min-width: 375px){
+@media(min-width: 376px){
 
+/* tablet margin for website */
+article.content{
+    margin: 0 5rem;
+}
+/* larger font size for larger view */
+.main-text h1{
+    font-size: 80px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 /* changing the size of the image to better fit a tablet view */
-.background{
+div.back-image{
     top:-65px;
     position: relative;
-padding:9rem;
+    padding:9rem;
+}
+div.contact h2{
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+div.contact p{
+    font-size: 30px;
+    margin-left: 1rem;
+}
+form.contact-form{
+    margin-left: 1rem;
+}
+label{
+    font-size: 20px;
+}
+.contact input[type=submit]{
+    width: 92%;
+    font-size: 32px;
+}
+div.contact{
+    margin-bottom: 6rem;
+}
+div.application p{
+    font-size: 16px;
+}
+footer{
+padding-left:5rem;
+padding-right: 5rem;
 
 }
-/* small changes made to go from mobile to tablet view - for easier viewing */
-.main-text{
-    text-align: left;
-}
-.main-text h1{
-    text-align: left;
-}
-
 /* allows me to align hours,city and calculate along one line for tablet users */
-.footertext{
-    display: flex;
+
+.footer-input{
+    display: grid;
+    grid-template-columns: 20% 45% 35%;
 }
-#hours{
-    flex: 1;
-    margin-right: 10px;
-    background-color:#F7F7FF;
+.calculate{
+    grid-column: 3 / 4;
 }
-#city{
-    flex: 3;
-    margin-right: 10px;
-    background-color:#F7F7FF;
-}
-/* makes the calculate button a bit bigger to suit the tablet view */
-.box2 input[type="submit"]{
-    height: 40px;
-    width: 10rem;
-}
-/* centering the icons for the larger breakpoint */
 .icons{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding:0;
 }
-
+.icons img{
+    margin: 1rem;
 }
-
+}
 @media(min-width: 768px){
-.grid{
+article.content{
+    margin: 4rem;
+}
+.content{
     display: grid;
     grid-template-columns:repeat(3, 1fr);
     grid-gap: 20px;
 }
-.background{
+.back-image{
     width: 100%;
     height: auto;
-    margin: -10rem;
-
+    margin: -10rem;   
 }
 .contact{	
-    z-index: 9;
+     z-index: 9;
 }	
+div.application p{
+    font-size: 15px;
+}
 
-/* allows me to align all footer items along one axis */
-.flex{
-    display: flex;
-    }
-#hours{
-   height: 20px;
+.footer-input{
+    display: grid;
+    grid-template-columns: 20% 45% 35%;
+
 }
-#city{
-    height: 20px;
-}
-/* brings icons to the far right side of the browser */
 .icons{
+    display: flex;
     margin-left:auto;
-
 }
 }
