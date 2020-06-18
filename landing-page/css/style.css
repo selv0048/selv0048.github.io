@@ -232,11 +232,13 @@ div.application p{
 
 .footer-input{
     display: grid;
-    grid-template-columns: 20% 45% 35%;
+    grid-template-columns:repeat(2, 1fr);
 
 }
 .icons{
     display: flex;
-    margin-left:auto;
+}
+.icons img{
+    justify-content: end;
 }
 }
