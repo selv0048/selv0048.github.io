@@ -8,26 +8,24 @@
     <title>Landing Page</title>
 </head>
 <body>
-    <main>
-<!-- this is where the logo is going to be placed, to take up the whole header section -putting the logo here because it will be same through any break point-->
-        <header>
-            <img src="images/logo/logo.png" alt="dash-logo">
-        </header>
+    <!-- this is where the logo is going to be placed, to take up the whole header section -putting the logo here because it will be same through any break point-->
+    <header>
+        <img src="images/logo/logo.png" alt="dash-logo">
+    </header>
 <!--deals with the first block of text area - this block deals with the large text area for the landing page-->
-        <div class="grid">
-            <div class="main-text">
-                <h1>Want to be your own boss?</h1>
-
-                <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
-            </div>
+    <main>
+        <div class="main-text">
+            <h1>Want to be your own boss?</h1>
+            <p class="main-small-text">Start today and make up to $30/hr driving your own vehicle with Dash!</p>
+        </div>
 <!-- div for thebackground image for the landing page-->
-            <div class="background"></div>
-<!--   deals with the contact form block of the landing page - seperate from the rest of the page.-->
-            <div class="contact">
-                <h2>Apply Now</h2>
-                <p>Enter your info below.</p>
-            <form>
-                <div class="contact-form">
+        <div class="background"></div>
+<!--   deals with the contact form block of the landing page - seperate from the rest of the page.-->        
+        <div class="contact">
+            <h2>Apply Now</h2>
+            <p>Enter your info below.</p>
+            <form class="contact-form">
+                <div class="contact-form-section">
                     <div>
                         <input type="text" name="fname" id="fname" placeholder="First Name">
                     </div>
@@ -43,16 +41,13 @@
                     <div>
                         <input type="checkbox" name="terms" value="terms"> I agree to dash terms
                     </div>
-                </div>
+                    <div class="drive-with-us">
+                        <input type="submit" value="DRIVE WITH US">
+                    </div>
+                </div> 
             </form>
-
-                <div>
-                    <input type="submit" value="DRIVE WITH US">
-                </div>
-
-                <p>Already applied? <a>Check your application status here</a></p>
-            </div> 
-        </div>  
+            <p>Already applied? <a>Check your application status here</a></p>
+        </div>
     <!-- footer has been seperated into it's own block - since it's at the bottom included everything that's at the end of the page in the footer -->
         <footer>
             <!-- footer text -->
@@ -61,22 +56,24 @@
                 <p>how many hours do you want to drive with us this week?</p>
             </div>
             <!-- footer input text fields -->  
-            <form class="flex">
-                    <div class="footertext">
-                        <div class="box1">
-                            <input type="text" name="hours" id="hours" placeholder="Hours">
-                            <input type="text" name="city" id="city" placeholder="City">
-                        </div>
-                        <div class="box2">
-                            <input type="submit" value="CALCULATE">
-                        </div>
+            <form class="footer-contact-form">
+                <div class="footer-text">
+                    <div class="hours">
+                        <input type="text" name="hours" id="hours" placeholder="Hours">
+                    </div>
+                    <div class="city">
+                        <input type="text" name="city" id="city" placeholder="City">
+                    </div>
+                    <div class="calculate">
+                        <input type="submit" value="CALCULATE">
                     </div>
                 <!-- footer icons added as images -->
-                <div class="icons">
+                    <div class="icons">
                         <img src="images/icons/facebook.svg" alt="facebook-logo">
                         <img src="images/icons/instagram.svg" alt="instagram-logo">
                         <img src="images/icons/linkedin.svg" alt="linkedin-logo">
                         <img src="images/icons/twitter.svg" alt="twitter-logo">
+                    </div>
                 </div>
             </form>
         </footer>
