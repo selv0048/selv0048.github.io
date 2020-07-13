@@ -701,6 +701,15 @@ iframe{
 .construction img{
     padding-top: 4rem;
 }
+.construction:hover{
+    animation-name: spin;
+    animation-duration: 5s; 
+}
+@keyframes spin{
+    100%{
+        transform: rotateY(5turn);
+    }
+}
 /* using grid here to create 3 equal columns of text */
 .about-info{
     display: grid;
@@ -767,6 +776,11 @@ iframe{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
+}
+
+.contact-form:active{
+    transform: rotateY(3turn);
+    transition: 0.5s;
 }
 
 .map{
