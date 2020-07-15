@@ -765,20 +765,40 @@ iframe{
         object-fit: cover;
     }
 
+    .restaurant-image,
+    .fitness-image{
+        margin-right: 0;
+    }
+    .bowling-image,
+    .rock-climb-image{
+        margin-left: 0;
+    }
     .page-break p{
         text-align: center;
         margin:0;
         font-size: 24px;
     }
+
     /* using flex here to make all the logos line up horizontally */
     .company{
         display: flex;
         flex-direction: row;
+        padding-bottom: 4rem;
+        margin-right: 5rem;
     }
-    .company{
-        margin-left: 20%;
-        margin-right: 20%;
+    .company img{
+        width: 10%;
+        height: auto;
+        margin-left: 3rem;
     }
+    .student-association-logo img{
+        width: 60%;
+        margin: 0;
+        padding: 0;
+        height: auto;
+    }
+
+    /*desktop changes to CONTACT page*/
 
     .location{
         margin-left: 0;
@@ -789,7 +809,6 @@ iframe{
         margin-top: 20%;
         margin-left: auto;
     }
-    /*desktop changes to CONTACT page*/
 
     /* using grid here to create two blocks between the text and map */
     .location-grid{
