@@ -481,15 +481,11 @@ iframe{
         display: grid;
         grid-template-columns: 15% 15% 20%;
         justify-content: end;
-        margin: auto;
+        margin-right: 1.5rem;
         padding-top: 1rem;
         grid-column-gap: 1rem;
-    }
-    .nav-links li{
-        margin-right: 0;
-        justify-self:start;
-    }
 
+    }
     .block-head h1{
         font-size: 72px;
         line-height: 4rem;
