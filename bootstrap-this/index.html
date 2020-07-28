@@ -19,15 +19,15 @@
       <div id="navbarNav" class="collapse navbar-collapse">
         <div class="navbar-nav ml-auto">
           <a href="index.html" class="nav-item nav-link active">Home</a>
-          <a href="#" class="nav-item nav-link">About</a>
-          <a href="#" class="nav-item nav-link">Components</a>
+          <a href="#about" class="nav-item nav-link">About</a>
+          <a href="#components" class="nav-item nav-link">Components</a>
         </div>
       </div>    
     </nav>
     <h1 class="text-center text-warning display-1">Bootstrappin'</h1>
     <img src="images/boots.jpg" alt="boots" class="img-fluid w-100">
     <div class="container-fluid">
-        <h1 class="text-info display-2 text-center font-weight-normal">About</h1>
+        <h1 class="text-info display-2 text-center font-weight-normal" id="about">About</h1>
         <div class="card-deck mx-1 mt-2">
             <div class="card">
                 <img src="images/image1.jpg" alt="code-image-1" class="card-img-top">
@@ -35,6 +35,9 @@
                     <h4 class="card-title text-center">Mobile First</h4>
                     <p class="card-text">Bootstrap is based on bottom up model.  It focuses on a mobile first layout that you can then adjust for larger widths.  It uses flexbox grid to build layouts of many shapes and sizes. This is where the 12 column system comes into play.
                     </p>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn-success btn-lg">Hello!</button>
+                    </div>
                 </div>
             </div>
             <div class="card">
@@ -43,6 +46,9 @@
                     <h4 class="card-title text-center">Components Library</h4>
                     <p class="card-text">Bootstrap comes with an extensive component library.  There are so many little things you can add and replace using bootstrap.  You can create carousels, nav bars, alerts, tables and so much more.  The component library is huge and it will take some time getting used to.
                     </p>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn-danger btn-lg" disabled>Goodbye!</button>
+                    </div>
                 </div>
             </div>
             <div class="card">
@@ -51,11 +57,39 @@
                     <h4 class="card-title text-center">Open Source</h4>
                     <p class="card-text">Bootstrap is an open source program/tool developers use to create websites.  You can quickly and easily create websites in a short amount of time.  Bootstrap is free to use for all developers.  It has a 12 column grid layout style.
                     </p>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn-secondary btn-lg">Hello!</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <h1 class="text-info display-2 text-center font-weight-normal">Components!</h1>
+    <p class="text-center font-weight-bold">Using col and offsets you can create some amazing layouts with Bootstrap</p>
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-6 offset-1 bg-danger text-white">Break</div>
+            <div class="col-6 offset-2 bg-dark text-white">Up</div>
+            <div class="col-6 offset-3 bg-secondary text-white">The</div>
+            <div class="col-6 offset-4 bg-primary text-white">Site</div>
+            <div class="col-6 offset-5 bg-success text-white">Using</div>
+            <div class="col-6 offset-6 bg-warning text-white">Bootstrap!</div>
+        </div>
+    </div>
+    <div class="containe d-flex justify-content-end">
+        <a class="btn btn-info btn-lg mr-2" href="https://getbootstrap.com/" role="button">Get Bootin'</a>
+    </div>
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-6 offset-6 bg-dark text-white">Isn't</div>
+            <div class="col-6 offset-5 bg-success text-white">it</div>
+            <div class="col-6 offset-4 bg-warning text-white">Awesome</div>
+            <div class="col-6 offset-3 bg-info text-white">What</div>
+            <div class="col-6 offset-2 bg-secondary text-white">Bootstrap</div>
+            <div class="col-6 offset-1 bg-danger text-white">Can Do!</div>
+        </div>
+        <p class="text-center font-weight-bold mt-2">This is the amazing power of the Grid layout sytem!</p>
+    </div>
+    <h1 class="text-info display-2 text-center font-weight-normal" id="components">Components!</h1>
     <div class="container-fluid mb-2">
         <div class="row">
             <div class="col-md-6 col-lg-3">
