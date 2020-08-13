@@ -7,4 +7,4 @@ The challenge to not want to pull out your hair or redesign something every time
 Attributions:
 Icons from taken from Adobe XD.  Icons from wireframes downloaded through ui8.net.  Wireframe XD folder was given to us in the User Experience class.
 Banner images taken from manypixels.co/gallery.  Attribution is not required but they do good work so I am including it just in case.
-Fonts taken from Google Fonts.
+Josefin Sans Fonts taken from Google Fonts.
