@@ -319,7 +319,7 @@ input[type=submit]{
 
     }   
 /*desktop breakpoint*/
-    @media(min-width: 768px){
+    @media(min-width: 769px){
         /*adding padding to pages to fill in white space*/
         .home,
         .photos,
