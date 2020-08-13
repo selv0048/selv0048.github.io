@@ -102,6 +102,10 @@ h2{
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
+/*turns off hyper link underline*/
+.text-area a{
+    text-decoration: none;
+}
 /*margins set for all pages across all breakpoints*/
 .home,
 .photos,
