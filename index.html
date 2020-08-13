@@ -3,19 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramana Selvakumaran</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Home</title>
 </head>
-<body>
-    <h1>Ramana Selvakumaran</h1>
-
-        <h2>MTM6201 Section 1</h2>
-
-            <h3>selv0048</h3>
-
-                <p>I didn't do anything special over the break.
-                I just stayed home and got caught up on my reading and Netflix tv shows.  I watched After Life starring Ricky Gervais.
-                Also I tried to do some course review from last semester.  I have been trying
-                to stay indoors as much as possible, but it's very hard.
-                </p>
-</body>
+	<body>
+		<main class="wrapper">
+			<!-- navigation bar for all sites -->
+			<header class="navigation">
+				<!-- custome logo for website -->
+				<div class="logo">
+					<img class="logo" src="images/logo.png" alt="custom-logo">
+				</div>
+				<div class="links">
+				<nav>
+					<ul class="nav-links">
+							<li><a class="active" href="index.html">Home</a></li>
+							<li><a href="photos.html">Photos</a></li>
+							<li><a href="websites.html">Websites</a></li>
+							<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+				</div>
+			</header>
+			<!-- specific class for home page -->
+				<div class="home">
+					<!-- using classes to break down parts of home page -->
+					<div class="grid-one">
+						<div class="banner">
+							<div class="title">
+								<h1>Home</h1>
+							</div>
+							<!-- banner image for home page -->
+							<div class="main-image">
+								<img src="images/designer-desk-dark.png" alt="person-at-drawing-board">
+							</div>
+						</div>
+					</div>
+					<div class="grid-two">
+						<!-- image with a title box -->
+						<div class="card-box">
+							<div class="text-box">
+								<div class="text-area">
+									<h2>Websites</h2>
+								</div>
+								<div class="text-image">
+									<img src="images/image1.jpg" alt="lines-of-code">
+								</div>
+							</div>
+							<div class="text-box">
+								<div class="text-area">
+									<h2>Photos</h2>
+								</div>
+								<div class="text-image">
+									<img src="images/photo-1.jpg" alt="dictionary-words">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<footer>
+				<!-- custom made arrow image for all pages -->
+				<div class="arrow">
+				<a href="#top">
+					<img src="icons/my-arrow.png" alt="arrow-icon">
+				</a>
+				</div>
+			<!-- social media icons placed in the footer of the document -->
+				<div class="social"> 
+					<div class="social-icons">
+						<img src="icons/instagram.svg" alt="instagram">
+						<img src="icons/twitter.svg" alt="twitter">
+				<img src="icons/facebook.svg" alt="facebook">
+					</div>
+				</div>
+			</footer>
+		</main>
+	</body>
 </html>
