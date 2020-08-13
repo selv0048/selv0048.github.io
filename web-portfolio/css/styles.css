@@ -1,0 +1,344 @@
+/* all types of Josefin Sans text for all html documents associated with it */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+body{
+	font-family: 'Josefin Sans', Arial, Helvetica, sans-serif; 
+}
+
+/* allows my images to be responsive */
+img{
+    max-width: 100%;
+    height: auto;
+}
+/*eliminates all styling from unordered list*/
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/*navigation settings for mobile view*/
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+/*once active the nav links grow larger*/
+header nav ul li a.active{
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 22px;
+}
+/*footer settings for all pages and sizes*/
+footer{
+    background-color: #064C4C;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+}
+/*sizing for custome arrow for mobile view*/
+footer .arrow{
+    padding: 5px;
+    height: 28px;
+    width: 28px;
+}
+footer .social{
+    margin-left: 1rem;
+}
+/*social icon image sizing for mobile view*/
+.social-icons img{
+    height: 14px;
+    margin-left: 10px;
+}
+/*navigagtion background colour similar across all pages and breakpoints*/
+.navigation{
+	background-color: #064C4C;
+	padding-bottom: 1rem;
+
+}
+/*logo styling for all pages and sizes*/
+.navigation img{
+	height: 53px;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	display:block;
+	padding: 1rem;
+}
+/*animation to make logo spin*/
+.navigation img:hover{
+    animation-name: spin;
+    animation-duration: 3s;
+}
+@keyframes spin{
+    100%{
+        transform: rotate(4turn);
+    }
+}
+/*mobile h1 sizes for all pages*/
+h1{
+    font-size: 35px;
+    color: #118080;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+/*mobile h2 sizes for all pages*/
+h2{
+    font-size: 20px;
+    color: #064C4C;
+    text-align: center;
+}
+/*changes to boxes in index and website page*/
+.text-box{
+    margin-bottom: 1rem;
+}
+.text-area{
+    background-color: #B2D8D8;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+/*margins set for all pages across all breakpoints*/
+.home,
+.photos,
+.contact,
+.websites{
+    margin-left:2rem;
+    margin-right: 2rem;
+}
+/*mobile view changes to photos page*/
+.photo-grid{
+    margin-bottom: 2rem;
+}
+
+/*mobile view contact page changes*/
+.profile{
+    background-color: #B2D8D8;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+/*profile image settings for mobile view*/
+.ramana img{
+    border-radius: 50%;
+    width: 50px;
+    border: 2px solid #FFFFFF;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.profile-text{
+    text-align: center;
+}
+.profile-text h1{
+    font-weight: bold;
+}
+/*profile text styling*/
+.profile-text p{
+    font-style: italic;
+    font-size: 20px;   
+    color: #064C4C;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    line-height: 2rem;
+}
+/*contact form styling*/
+.contact-form{
+    background-color: #064C4C;
+    border: 0;
+    margin-bottom: 1rem;
+}
+.first-name,
+.last-name,
+.comment{
+    border: 1px solid #064C4C;
+    font-size: 10px;
+    font-weight: bold;
+    padding:1rem;
+}
+/*contact form label styling*/
+label{
+    background-color: #064C4C;
+    color: white;
+}
+.textbox input[type=text]{
+    background-color: white;
+    border: 0;
+    width: 100%;
+    height: 50px;
+    margin-top: 0.5rem;
+}
+.textbox input::placeholder{
+    font-size: 14px;
+    color: #B2D8D8;
+    padding-left: 1rem;
+}
+textarea{
+    width: 100%;
+    height: 134px;
+    margin-top: 0.5rem;
+}
+/*styling for button within contact form*/
+input[type=submit]{
+    background-color: #118080;
+    color: white;
+    font-weight: bold;
+    width: 249px;
+    height: 48px;
+    padding:0.5rem;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem; 
+}
+
+/*media break point for all views*/
+    @media(min-width: 376px){
+
+    .logo{
+        margin-right: 2rem;
+    }
+    /*using grid here to seperate logo image from nav links*/
+    .navigation{
+        padding-bottom: 0;
+        display: grid;
+        grid-template-columns: 25% 75%;
+    }
+    /*using display flex here to align nav links vertically*/
+    .nav-links{
+        display: flex;
+        padding-top: 2rem;
+        grid-column-gap: 1rem;
+        justify-content: flex-end;
+        align-content: flex-end;
+        margin-right: 2rem;
+        align-items: baseline;
+    }
+    /*using grid here to seperate arrow image from social media images*/
+    footer{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: auto;
+    }
+    /*sizing for social media images across tablet and desktop view*/
+    .social-icons img{
+        height: 25px;
+        width: auto;
+    }  
+    /*added padding here to fill out tablet view pages across all sites*/
+    .home,
+    .photos,
+    .websites,
+    .contact{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        }
+    /*using grid here to get page name and main image side by side with site content*/
+    .banner{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 2rem;
+    }
+
+    .main-image{
+        max-width: 373px;
+        height: auto;
+    }
+    /*animation across all images to make the main images rotate around*/
+    .main-image:hover{
+        animation-name: around;
+        animation-duration: 3s;
+    }
+    @keyframes around{
+        100%{
+            transform: rotateX(5turn);
+        }
+    }
+    /*changing h1 size across tablet and desktop views*/
+    .title h1{
+        font-weight: bold;
+        margin-top: 5rem;
+        font-size: 80px;
+    }
+    /*tablet home page/website page*/
+    /*using display grid here to make content align side by side*/
+    .card-box{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;;
+    }
+    .card-box img{
+        height: 306px;
+        width: auto;
+        object-fit: cover;
+    }
+    /*animation to make images rotate when pressed on*/
+    .card-box img:active{
+        animation-name: spinner;
+        animation-duration: 3s;
+    }
+    @keyframes spinner{
+        100%{
+            transform: rotateY(5turn);
+        }
+    }
+    /*tablet photos page*/
+    /*using grid here to create 4X4 boxes of images*/
+    .image-grid{
+        display: grid;
+        grid-template-columns: 48% 48%;
+        grid-gap: 1%;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    .image-grid:active{
+        animation-name: spinner-two;
+        animation-duration: 3s;
+    }
+    @keyframes spinner-two{
+        100%{
+            transform: rotate(5turn); 
+        }
+    }
+    .photo-grid{
+        margin-bottom: 0;
+    }
+    /*styling for contact page*/
+    .contact-form{
+        margin-bottom: 2rem;
+    }
+    /*making profile image larger for desktop and tablet view*/
+    .ramana img{
+        width: 130px;
+    }
+
+
+    }   
+/*desktop breakpoint*/
+    @media(min-width: 768px){
+        /*adding padding to pages to fill in white space*/
+        .home,
+        .photos,
+        .websites,
+        .contact{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+        .banner{
+            display: inline;
+        }
+        /*allows main image to be larger and responsive*/
+        .main-image{
+            margin: auto;
+            max-width: 100%;
+        }
+        .grid-two{
+            align-self: center;
+        }
+}
